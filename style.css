@@ -1,0 +1,219 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;    
+}
+
+.navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    padding: 20px 10px;
+}
+.navbar .navbar-brand img{
+    width: 18%;
+}
+.navbar .navbar-brand input{
+    border-radius: 20px;
+    border: none;
+    padding: 2px 20px;
+    font-size: 17px;
+    background-color: #F1F2F6;
+}
+.navbar .navbar-brand input:focus{
+    outline: none;
+}
+.navbar ul li .home i{
+    color: #1678F6;
+}
+.navbar ul li  a i{
+    margin-right: 90px;
+    font-size: 25px;
+    color: black;
+}
+
+nav #saqib{
+    width: 2.5%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+}
+nav #imgName{
+    font-size: 13px;
+    margin-left: 10px;
+    font-weight: 600;
+}
+nav .navicon{
+    font-size: 20px;
+margin-left: 20px;
+width: 40px;
+aspect-ratio: 1;
+background-color: #E8E8E8;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+cursor: pointer;
+}
+.navbar #play{
+    width: 35%;
+    aspect-ratio: 1;
+    transform: translateY(-5px);
+}
+
+
+
+
+
+.first{
+  position: fixed;
+  top: 80px;
+}
+.first #colm1{
+    padding: 20px;
+    background-color: #F3F4F6;
+    height: 100vh;
+}
+.first .saqi{
+    width: 12%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 8px 15px;
+}
+.first .name{
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+.first #see{
+    background-color: #E5E6EB;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.first #colm3{
+    background-color: #a1a1a138;
+}
+.first #text{
+display: flex;
+align-items: center;
+justify-content: center;
+ width: 100%;
+}
+.first .simg{
+    width: 6%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translateY(10px);
+}
+.first .sinput{
+ width: 80%;
+    font-size: 15px;
+    margin-top: 20px;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 10px;
+    background-color: #F1F2F6;
+}
+.first .sinput:focus{
+    outline: none;
+}
+.first .sinput::placeholder{
+    color: #848589;
+}
+
+.folders{
+    width: 100%;
+     display: flex; 
+     align-items: center;
+     justify-content: center;
+}
+#colm2 .folders .folimg{
+    width: 15%;
+}
+#colm2 .folders .foltext{
+    font-weight: 500;
+    margin-left: 20px;
+}
+.id{
+    margin-top: 35px;
+    background-color: #71717431;
+   padding: 8px 10px;
+}
+.idcontent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.idtime{
+    display: flex;
+    flex-direction: column;
+}
+.id img{
+    width: 6%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 15px;
+}
+.idname{
+    font-weight: 600;
+    margin-left: 10px;
+}
+.idtime{
+    color: #a1a1a1;
+    margin-left: 50px;
+    position: relative;
+    bottom: 15px;
+}
+.idtime i{
+    color: #848589;
+}
+.dots i{
+    font-size: 25px;
+    color: #848589;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.idpara{
+    font-size: 19px;
+    font-weight: 500;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.contacts h5{
+    font-size: 28px;
+}
+.contacts i{
+  font-size: 30px;
+  cursor: pointer;
+}
+.contactimgname img{
+  width: 10%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+} 
+.contactname{
+    margin-left: 20px;
+    font-weight: 500;
+    color: black;
+}
