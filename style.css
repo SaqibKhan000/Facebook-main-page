@@ -1,63 +1,72 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar{
-    width: 100vw;
+.navbar {
+    z-index: 10000;
     display: flex;
     justify-content: space-between;
     position: fixed;
     top: 0;
+    background-color: white;
     padding: 20px 10px;
 }
-.navbar .navbar-brand img{
+
+.navbar .navbar-brand img {
     width: 18%;
 }
-.navbar .navbar-brand input{
+
+.navbar .navbar-brand input {
     border-radius: 20px;
     border: none;
     padding: 2px 20px;
     font-size: 17px;
     background-color: #F1F2F6;
 }
-.navbar .navbar-brand input:focus{
+
+.navbar .navbar-brand input:focus {
     outline: none;
 }
-.navbar ul li .home i{
+
+.navbar ul li .home i {
     color: #1678F6;
 }
-.navbar ul li  a i{
+
+.navbar ul li a i {
     margin-right: 90px;
     font-size: 25px;
     color: black;
 }
 
-nav #saqib{
+nav #saqib {
     width: 2.5%;
     aspect-ratio: 1;
     border-radius: 50%;
     object-fit: cover;
 }
-nav #imgName{
+
+nav #imgName {
     font-size: 13px;
     margin-left: 10px;
     font-weight: 600;
 }
-nav .navicon{
+
+nav .navicon {
     font-size: 20px;
-margin-left: 20px;
-width: 40px;
-aspect-ratio: 1;
-background-color: #E8E8E8;
-display: flex;
-align-items: center;
-justify-content: center;
-border-radius: 50%;
-cursor: pointer;
+    margin-left: 20px;
+    width: 40px;
+    aspect-ratio: 1;
+    background-color: #E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
 }
-.navbar #play{
+
+.navbar #play {
     width: 35%;
     aspect-ratio: 1;
     transform: translateY(-5px);
@@ -67,28 +76,43 @@ cursor: pointer;
 
 
 
-.first{
-  position: fixed;
-  top: 80px;
-}
-.first #colm1{
+
+
+.first #colm1 {
     padding: 20px;
     background-color: #F3F4F6;
     height: 100vh;
+    overflow-y: scroll;
+    position: fixed;
+    left: 0;
+    top: 100px;
 }
-.first .saqi{
+
+.first #colm1 h5 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 20px;
+    font-weight: 500;
+    color: rgba(78, 77, 77, 0.884);
+    cursor: pointer;
+}
+
+.first .saqi {
     width: 12%;
     aspect-ratio: 1;
     border-radius: 50%;
     object-fit: cover;
     margin: 8px 15px;
 }
-.first .name{
+
+.first .name {
     font-size: 15px;
     font-weight: 600;
     margin-left: 5px;
 }
-.first #see{
+
+.first #see {
     background-color: #E5E6EB;
     font-size: 15px;
     padding: 8px;
@@ -101,24 +125,33 @@ cursor: pointer;
 
 
 
-.first #colm3{
+.first #colm3 {
     background-color: #a1a1a138;
+    position: fixed;
+    right: 0;
+    top: 100px;
+    width: 25%;
+    padding: 0 10px;
+    height: 100vh;
 }
-.first #text{
-display: flex;
-align-items: center;
-justify-content: center;
- width: 100%;
+
+.first #text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
-.first .simg{
+
+.first .simg {
     width: 6%;
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 50%;
     transform: translateY(10px);
 }
-.first .sinput{
- width: 80%;
+
+.first .sinput {
+    width: 80%;
     font-size: 15px;
     margin-top: 20px;
     font-weight: 600;
@@ -128,92 +161,152 @@ justify-content: center;
     margin-left: 10px;
     background-color: #F1F2F6;
 }
-.first .sinput:focus{
+
+.first .sinput:focus {
     outline: none;
 }
-.first .sinput::placeholder{
+
+.first .sinput::placeholder {
     color: #848589;
 }
 
-.folders{
+.folders {
     width: 100%;
-     display: flex; 
-     align-items: center;
-     justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#colm2 .folders .folimg{
+
+#colm2 .folders .folimg {
     width: 15%;
 }
-#colm2 .folders .foltext{
+
+#colm2 .folders .foltext {
     font-weight: 500;
     margin-left: 20px;
 }
-.id{
+
+.id {
     margin-top: 35px;
-    background-color: #71717431;
-   padding: 8px 10px;
+    background-color: #8a8a8f18;
+    padding: 8px 10px;
 }
-.idcontent{
+
+.idcontent {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.idtime{
+
+.idtime {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: start;
 }
-.id img{
+.idtime i{
+    margin-left: 10px;
+}
+.id img {
     width: 6%;
     aspect-ratio: 1;
     border-radius: 50%;
     object-fit: cover;
     margin-top: 15px;
 }
-.idname{
+
+.idname {
     font-weight: 600;
     margin-left: 10px;
 }
-.idtime{
+
+.idtime {
     color: #a1a1a1;
     margin-left: 50px;
     position: relative;
     bottom: 15px;
 }
-.idtime i{
+
+.idtime i {
     color: #848589;
 }
-.dots i{
+
+.dots i {
     font-size: 25px;
     color: #848589;
     margin-right: 20px;
     cursor: pointer;
 }
 
-.idpara{
+.idpara {
     font-size: 19px;
     font-weight: 500;
 }
-.contacts{
+
+.contacts {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
 }
-.contacts h5{
+
+.contacts h5 {
     font-size: 28px;
 }
-.contacts i{
-  font-size: 30px;
-  cursor: pointer;
+
+.contacts i {
+    font-size: 30px;
+    cursor: pointer;
 }
-.contactimgname img{
-  width: 10%;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border-radius: 50%;
-} 
-.contactname{
+
+.contactimgname img {
+    width: 10%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contactname {
     margin-left: 20px;
     font-weight: 500;
     color: black;
+}
+
+
+#flowers {
+    width: 100%;
+    height: 10%;
+    object-fit: cover;
+
+}
+
+#colm2 {
+    margin: 0 auto;
+}
+
+.flower-likes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.flower-likes img {
+    cursor: pointer;
+    width: 20%;
+    margin: 20px 10px;
+}
+
+.flower-likes span {
+    color: grey;
+}
+.colorful img{
+     cursor: pointer;
+   width: 4%;
+}
+.colorful span{
+    color: rgb(77, 75, 75);
+}
+.colorful .one{
+   transform: translateX(10px);
 }
